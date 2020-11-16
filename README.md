@@ -10,7 +10,7 @@ Yugo Murawaki. [Latent Geographical Factors for Analyzing the Evolution of Diale
   - numpy
   - scipy
 
-## Run the Siulation
+## Run the Simulation
 
 ```sh
 mkdir data # or choose another directory and call simulation.make with PREFIX=foo/bar.
