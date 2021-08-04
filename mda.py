@@ -389,7 +389,7 @@ class MatrixDecompositionAutologistic(object):
             logprob0, logprob1 = (0.0, 0.0)
             if not self.only_alphas:
                 idxs, weights = self.hnet.js[l]
-                vals = self.zmat[k,idxs]
+                vals = zvect[idxs]
                 logprob0 += h * ((vals == 0) * weights).sum()
                 logprob1 += h * ((vals == 1) * weights).sum()
             logprob1 += a
